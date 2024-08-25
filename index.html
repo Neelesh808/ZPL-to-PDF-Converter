@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZPL to PDF Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>ZPL to PDF Converter</h1>
+        <p>Welcome to our website, your go-to tool for converting ZPL code into PDF format with ease ! Whether you're
+            working with a single label or multiple ZPL codes, our tool has you covered. Simply enter your ZPL code
+            starting with "^XA" and ending with "^XZ" in the input box, and let us do the rest. In just a few clicks,
+            you'll have your ZPL code converted into a clean, ready-to-use PDF file. Perfect for label printing,
+            archiving, or sharing. Try it now and streamline your workflow !</p>
+        <form id="converterForm">
+            <div class="form-group">
+                <label for="zplText">Enter ZPL Code:</label>
+                <textarea id="zplText" rows="20" placeholder="Paste your ZPL code here..."></textarea>
+            </div>
+            <p id="statusMessage"></p>
+            <button id="sumbitBtn" type="button">Convert to PDF</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
